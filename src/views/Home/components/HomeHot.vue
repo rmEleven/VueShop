@@ -1,5 +1,5 @@
 <script setup>
-import HomePannel from './HomePannel.vue'
+import HomePanel from './HomePanel.vue'
 import { ref, onMounted } from 'vue'
 import { findHotAPI } from '@/apis/home'
 
@@ -14,7 +14,7 @@ onMounted(() => getHotList())
 </script>
 
 <template>
-  <HomePannel title="人气推荐" subTitle="人气爆款 不容错过">
+  <HomePanel title="人气推荐" subTitle="人气爆款 不容错过">
     <ul class="goods-list">
       <li v-for="item in hotList" :key="item.id">
         <RouterLink to="/">
@@ -24,7 +24,7 @@ onMounted(() => getHotList())
         </RouterLink>
       </li>
     </ul>
-  </HomePannel>
+  </HomePanel>
 </template>
 
 <style scoped lang='scss'>
