@@ -52,7 +52,7 @@ onMounted(() => getBanner())
         <ul>
           <li v-for="i in categoryData.children" :key="i.id">
             <RouterLink to="/">
-              <img :src="i.picture" />
+              <img v-img-lazy="i.picture" />
               <p>{{ i.name }}</p>
             </RouterLink>
           </li>
