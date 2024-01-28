@@ -1,6 +1,5 @@
 <script setup>
 import DetailHot from './components/DetailHot.vue'
-import ImageView from '@/components/ImageView/index.vue'
 
 import { getDetail } from '@/apis/detail'
 import { ref, onMounted } from 'vue'
